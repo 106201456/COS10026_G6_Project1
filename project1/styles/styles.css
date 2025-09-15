@@ -1,0 +1,96 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;900&family=Manrope:wght@300;400;700&display=swap');
+
+/* General Theme */
+body {
+  background-color: #000;
+  font-family: 'Manrope', sans-serif;
+  color: rgb(197,197,197);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Figtree', sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  color: rgb(197,197,197);
+}
+
+p, li, dl, table {
+  color: rgb(197,197,197);
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  background: #0C44FF;
+  padding: 10px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #5DC3FF;
+}
+
+/* Student IDs floated right */
+ul {
+  float: right;
+  margin: 10px;
+}
+
+/* Group Photo */
+figure {
+  float: right;
+  border: 2px solid #5DC3FF;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* Table styling */
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table, th, td {
+  border: 1px solid #5DC3FF;
+  padding: 10px;
+}
+
+th {
+  background-color: #111111;
+  font-weight: bold;
+}
+
+td {
+  background-color: #222222;
+}
+
+td:hover {
+  background-color: #333333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+}
