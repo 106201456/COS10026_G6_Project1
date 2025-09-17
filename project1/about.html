@@ -1,110 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - G6</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" href="images/computing-cloud.png">
 </head>
 <body>
+
+  <!-- Navigation bar -->
   <header>
-    <h1>About Our Group - G6</h1>
+    <div class="logo-container">
+      <img class="logo" src="images/Logo cropped.png" alt="logo">
+    </div>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="jobs.html">Jobs</a></li>
-        <li><a href="apply.html">Apply</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
       </ul>
     </nav>
+    <div class="apply-container">
+      <a class="applynow" href="apply.html"><button>Apply now</button></a>
+    </div>
   </header>
 
-  <main>
-    <section>
+<div>
+  <section class="hero-jobs">
+    <h1 class="sizeing"><span class="change">About </span> us</h1>
+    <h3>we are G6, a team of innovators building seamless cloud solutions for the digital future.</h3>
+    <p>.</p>
+  </section>
+</div>
+
+  <!-- Page Content -->
+  <div class="about-main">
+
+    <!-- Group Info -->
+    <section class="about-info">
       <h2>Group Information</h2>
       <p><strong>Group Name:</strong> G6</p>
-      <p><strong>Class Time:</strong> [Insert Day & Time]</p>
+      <p><strong>Class Time:</strong> [Insert Day &amp; Time]</p>
       <p><strong>Tutor:</strong> Ms. PAWANI T. RASARATNAM</p>
 
       <h2>Student IDs</h2>
       <ul>
-        <li>Student 1
-          <ul>
-            <li>[ID]</li>
-          </ul>
-        </li>
-        <li>Student 2
-          <ul>
-            <li>[ID]</li>
-          </ul>
-        </li>
-        <li>Student 3
-          <ul>
-            <li>[ID]</li>
-          </ul>
-        </li>
-        <li>Student 4
-          <ul>
-            <li>[ID]</li>
-          </ul>
-        </li>
+        <li>Naweed  – j25044443</li>
+        <li>Momona – J24041051</li>
+        <li>Zhihong – J25045454</li>
+        <li>Amirul – J25045370</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Members’ Contributions</h2>
-      <dl>
-        <dt>Student 1</dt>
-        <dd>Worked on [your task]</dd>
-        <dt>Student 2</dt>
-        <dd>Worked on [task]</dd>
-        <dt>Student 3</dt>
-        <dd>Worked on [task]</dd>
-        <dt>Student 4</dt>
-        <dd>Worked on [task]</dd>
-      </dl>
-    </section>
-
-    <section>
-      <h2>Group Photo</h2>
+    <!-- Group Photo -->
+    <section class="about-photo">
+      <h2>Our Group</h2>
       <figure>
-        <img src="images/group_photo.jpg" alt="Group 6 Team Photo" width="400">
+        <img src="styles/images/jobs.png" alt="Group G6 Team Photo">
         <figcaption>Our group G6 at Swinburne</figcaption>
       </figure>
     </section>
+<hr>
 
-    <section>
+    <!-- Contributions -->
+    <section class="about-contributions">
+      <h2>Members’ Contributions</h2>
+      <dl>
+        <dt>Naweed  – j25044443</dt>
+        <a href="index.html"><dd>Homepage</dd></a>
+        <dt>Momona – J24041051</dt>
+        <a href="apply.html"><dd>Job application(apply page)</dd></a>
+        <dt>Zhihong – J25045454</dt>
+        <a href="jobs.html"><dd>Jobs page</dd></a>
+        <dt>Amirul – J25045370</dt>
+        <a href="about.html"><dd>About page</dd></a>
+      </dl>
+    </section>
+
+    <!-- Interests -->
+    <section class="about-interests">
       <h2>Members’ Interests</h2>
       <table>
         <caption>Group G6 Members’ Interests</caption>
-        <tr>
-          <th>Name</th>
-          <th colspan="2">Interests</th>
-        </tr>
-        <tr>
-          <td>Student 1</td>
-          <td>Coding</td>
-          <td>Gaming</td>
-        </tr>
-        <tr>
-          <td>Student 2</td>
-          <td colspan="2">AI & Machine Learning</td>
-        </tr>
-        <tr>
-          <td>Student 3</td>
-          <td>Photography</td>
-          <td>Music</td>
-        </tr>
-        <tr>
-          <td>Student 4</td>
-          <td colspan="2">Web Development</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th colspan="2">Interests</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Naweed  – j25044443</td>
+            <td>Sports</td>
+            <td>Travel</td>
+          </tr>
+          <tr>
+            <td>Momona – J24041051</td>
+            <td colspan="2">Music</td>
+          </tr>
+          <tr>
+            <td>Zhihong – J25045454</td>
+            <td>Reading</td>
+            <td>Exercise</td>
+          </tr>
+          <tr>
+            <td>Amirul – J25045370</td>
+            <td colspan="2">Gaming</td>
+          </tr>
+        </tbody>
       </table>
     </section>
-  </main>
+
+    <!-- Timetable -->
+    <section class="about-timetable" aria-labelledby="timetable-title">
+      <h2 id="timetable-title">Class Timetable</h2>
+      <table class="timetable" aria-describedby="timetable-title">
+        <caption>Semester 1 Timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Time</th>
+            <th scope="col">Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Day">Monday</td>
+            <td data-label="Time">8–10</td>
+            <td data-label="Subject">COS10009 Introduction to Programming</td>
+          </tr>
+          <tr>
+            <td data-label="Day">Monday</td>
+            <td data-label="Time">12–2</td>
+            <td data-label="Subject">MAT2208 Mathematics for Computing</td>
+          </tr>
+          <tr>
+            <td data-label="Day">Monday</td>
+            <td data-label="Time">2–4</td>
+            <td data-label="Subject">COS10004 Computer Systems</td>
+          </tr>
+
+          <tr>
+            <td data-label="Day">Tuesday</td>
+            <td data-label="Time">10–12</td>
+            <td data-label="Subject">COS10009 Introduction to Programming</td>
+          </tr>
+          <tr>
+            <td data-label="Day">Tuesday</td>
+            <td data-label="Time">12–2</td>
+            <td data-label="Subject">COS10004 Computer Systems</td>
+          </tr>
+          <tr>
+            <td data-label="Day">Tuesday</td>
+            <td data-label="Time">4–6</td>
+            <td data-label="Subject">COS10026 Web Technology Project</td>
+          </tr>
+
+          <tr>
+            <td data-label="Day">Wednesday</td>
+            <td data-label="Time">10–12</td>
+            <td data-label="Subject">TNE10006 Networks &amp; Switching</td>
+          </tr>
+          <tr>
+            <td data-label="Day">Wednesday</td>
+            <td data-label="Time">12–2</td>
+            <td data-label="Subject">COS10026 Web Technology Project</td>
+          </tr>
+
+          <tr>
+            <td data-label="Day">Thursday</td>
+            <td data-label="Time">4–6</td>
+            <td data-label="Subject">MAT2208 Mathematics for Computing</td>
+          </tr>
+
+          <tr>
+            <td data-label="Day">Friday</td>
+            <td data-label="Time">8–11</td>
+            <td data-label="Subject">TNE10006 Networks &amp; Switching</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div> <!-- /.about-main -->
+
+  <!-- Footer Nav -->
+  <div class="foot-nav">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Group G6 | COS10026 Web Technology Project</p>
+    <div>
+      <p>&copy; 2025 Flowops | COS10026 Group G6</p>
+      <p>
+        <a href="https://naveedahd.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible" target="_blank">
+          View Jira Project
+        </a>
+      </p>
+    </div>
   </footer>
+
 </body>
 </html>
+

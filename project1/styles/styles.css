@@ -94,3 +94,79 @@ footer {
   font-size: small;
   padding: 10px;
 }
+
+
+/* -------------------------------
+   Timetable (about page) styles
+   - scoped to .about-timetable so it doesn't affect other tables
+   ------------------------------- */
+.about-timetable {
+  margin: 2rem auto;
+  max-width: 980px;
+  padding: 0 1rem;
+}
+
+.about-timetable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.about-timetable caption {
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.about-timetable th,
+.about-timetable td {
+  border: 1px solid #5DC3FF;
+  padding: 8px;
+  text-align: left;
+}
+
+.about-timetable th {
+  background: #111111;
+  color: #fff;
+  font-weight: 600;
+}
+
+.about-timetable td {
+  background: #222222;
+  color: rgb(197,197,197);
+}
+
+.about-timetable tr:hover td {
+  background: #333333;
+}
+
+/* Responsive: stack rows on small screens and show labels via data-label */
+@media (max-width: 640px) {
+  .about-timetable thead { display: none; }
+
+  .about-timetable table,
+  .about-timetable tbody,
+  .about-timetable tr,
+  .about-timetable td {
+    display: block;
+    width: 100%;
+  }
+
+  .about-timetable tr {
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(92, 195, 255, 0.15);
+  }
+
+  .about-timetable td {
+    padding: 6px 8px;
+    position: relative;
+  }
+
+  .about-timetable td::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: 700;
+    width: 6.5rem;
+    color: #5DC3FF;
+  }
+}
